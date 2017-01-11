@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="475.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkers.GameBoardController">
+   <children>
+      <ImageView fx:id="board" fitHeight="476.0" fitWidth="532.0" onMouseClicked="#desiredPosition" preserveRatio="true">
+         <image>
+            <Image url="@board.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r9" fitHeight="66.0" fitWidth="66.0" layoutX="19.0" layoutY="286.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r10" fitHeight="66.0" fitWidth="66.0" layoutX="125.0" layoutY="286.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r11" fitHeight="66.0" fitWidth="66.0" layoutX="231.0" layoutY="286.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r12" fitHeight="66.0" fitWidth="66.0" layoutX="337.0" layoutY="286.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r5" fitHeight="66.0" fitWidth="66.0" layoutX="72.0" layoutY="339.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r6" fitHeight="66.0" fitWidth="66.0" layoutX="178.0" layoutY="339.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r7" fitHeight="66.0" fitWidth="66.0" layoutX="284.0" layoutY="339.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r8" fitHeight="66.0" fitWidth="66.0" layoutX="390.0" layoutY="339.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r1" fitHeight="66.0" fitWidth="66.0" layoutX="19.0" layoutY="392.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r2" fitHeight="66.0" fitWidth="66.0" layoutX="125.0" layoutY="392.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r3" fitHeight="66.0" fitWidth="66.0" layoutX="231.0" layoutY="392.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r4" fitHeight="66.0" fitWidth="66.0" layoutX="337.0" layoutY="392.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@r.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b1" fitHeight="66.0" fitWidth="66.0" layoutX="72.0" layoutY="21.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b2" fitHeight="66.0" fitWidth="66.0" layoutX="178.0" layoutY="21.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b3" fitHeight="66.0" fitWidth="66.0" layoutX="284.0" layoutY="21.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b4" fitHeight="66.0" fitWidth="66.0" layoutX="390.0" layoutY="21.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b5" fitHeight="66.0" fitWidth="66.0" layoutX="19.0" layoutY="74.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b6" fitHeight="66.0" fitWidth="66.0" layoutX="125.0" layoutY="74.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b7" fitHeight="66.0" fitWidth="66.0" layoutX="231.0" layoutY="74.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b8" fitHeight="66.0" fitWidth="66.0" layoutX="337.0" layoutY="74.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b9" fitHeight="66.0" fitWidth="66.0" layoutX="72.0" layoutY="127.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b10" fitHeight="66.0" fitWidth="66.0" layoutX="178.0" layoutY="127.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b11" fitHeight="66.0" fitWidth="66.0" layoutX="284.0" layoutY="127.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b12" fitHeight="66.0" fitWidth="66.0" layoutX="390.0" layoutY="127.0" onMouseClicked="#movePiece" preserveRatio="true">
+         <image>
+            <Image url="@b.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="turn_label" alignment="CENTER" layoutY="476.0" prefHeight="66.0" prefWidth="476.0" text="Player 1's Turn" textAlignment="CENTER">
+         <font>
+            <Font name="Abyssinica SIL" size="40.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fx:id="r1k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r2k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r3k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r4k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r5k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r6k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r7k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r8k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r9k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r10k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r11k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="r12k" fitHeight="66.0" fitWidth="66.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@r_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b1k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b2k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b3k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b4k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b5k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b6k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b7k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b8k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b9k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b10k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b11k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b12k" fitHeight="66.0" fitWidth="66.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#movePiece" visible="false">
+         <image>
+            <Image url="@b_king.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
